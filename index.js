@@ -39,18 +39,27 @@ $("#secondScreenNextButton").click(function(){
     // console.log(hijrahDate);
     var date = hijrahDate._year + "/" + hijrahDate._monthOfYear + "/" + hijrahDate._dayOfMonth;
 
+    // get the tari5AlraqamAlmoahad in hijri
+    var tari5AlraqamAlmoahad = new HijrahDate($("#tari5AlraqamAlmoahad").val());
+    var newTari5AlraqamAlmoahad = tari5AlraqamAlmoahad._year + "/" + tari5AlraqamAlmoahad._monthOfYear + "/" + tari5AlraqamAlmoahad._dayOfMonth;
+
+    // get tari5RaqamAlro5sa in hijri
+    var tari5RaqamAlro5sa = new HijrahDate($("#tari5RaqamAlro5sa").val());
+    var newTari5RaqamAlro5sa = tari5RaqamAlro5sa._year + "/" + tari5RaqamAlro5sa._monthOfYear + "/" + tari5RaqamAlro5sa._dayOfMonth;
+
+
     // all operations will done here
     $("#selectedAltaqrir").text("التقرير / " + $("#altaqrir").val());
     $("#selectedAltari5").text("التاريخ : " + curday('/') + " التاريخ الهجري : " + date);
     $("#selectedName").text($("#name").val());
     $("#selectedAlsegelAlmadaniOrAltogary").text($("#alsgilAlmadaniOrAltogary").val());
-    $("#selectedAlraqamAlmoahad").text($("#alraqamAlmoahad").val() +" بتاريخ "+ $("#tari5AlraqamAlmoahad").val());
+    $("#selectedAlraqamAlmoahad").text($("#alraqamAlmoahad").val() +" بتاريخ " + newTari5AlraqamAlmoahad);
     $("#selectedAlhai").text($("#alhai").val());
     $("#selectedRaqamAlqit3a").text($("#raqamAlqit3a").val());
     $("#selectedAlmo5atat").text($("#almo5atat").val());
     $("#selectedNo3Altaqrir").text($("#no3Altaqrir").val());
     $("#selectedAlmabna").text($("#no3Almabna").val());
-    $("#selectedRaqamAlro5sa").text($("#raqamAlro5sa").val() + " بتاريخ " + $("#tari5RaqamAlro5sa").val());
+    $("#selectedRaqamAlro5sa").text($("#raqamAlro5sa").val() + " بتاريخ " + newTari5RaqamAlro5sa);
     $("#selectedRaqamAlitisal").text($("#raqamAltawasol").val());
 
 });
