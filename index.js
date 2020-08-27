@@ -1,5 +1,6 @@
 // init all screens
 // $("#first-screen").hide();
+
 $("#second-screen").hide();
 $("#third-screen").hide();
 $("#fourth-screen").hide();
@@ -30,21 +31,26 @@ $("#firstScreenSubmit").click(function(){
 
 // second screen buttons
 $("#secondScreenNextButton").click(function(){
+
     $("#second-screen").hide();
     $("#third-screen").show();
 
+    var hijrahDate = new HijrahDate();
+    // console.log(hijrahDate);
+    var date = hijrahDate._year + "/" + hijrahDate._monthOfYear + "/" + hijrahDate._dayOfMonth;
+
     // all operations will done here
     $("#selectedAltaqrir").text("التقرير / " + $("#altaqrir").val());
-    $("#selectedAltari5").text("التاريخ / " + curday('/'));
+    $("#selectedAltari5").text("التاريخ : " + curday('/') + " التاريخ الهجري : " + date);
     $("#selectedName").text($("#name").val());
     $("#selectedAlsegelAlmadaniOrAltogary").text($("#alsgilAlmadaniOrAltogary").val());
-    $("#selectedAlraqamAlmoahad").text($("#alraqamAlmoahad").val());
+    $("#selectedAlraqamAlmoahad").text($("#alraqamAlmoahad").val() +" بتاريخ "+ $("#tari5AlraqamAlmoahad").val());
     $("#selectedAlhai").text($("#alhai").val());
     $("#selectedRaqamAlqit3a").text($("#raqamAlqit3a").val());
     $("#selectedAlmo5atat").text($("#almo5atat").val());
     $("#selectedNo3Altaqrir").text($("#no3Altaqrir").val());
     $("#selectedAlmabna").text($("#no3Almabna").val());
-    $("#selectedRaqamAlro5sa").text($("#raqamAlro5sa").val());
+    $("#selectedRaqamAlro5sa").text($("#raqamAlro5sa").val() + " بتاريخ " + $("#tari5RaqamAlro5sa").val());
     $("#selectedRaqamAlitisal").text($("#raqamAltawasol").val());
 
 });
@@ -82,7 +88,7 @@ $("#thirdScreenNextButton").click(function(){
     $("#selectedTabi3aAb3adSouth").text($("#ab3adGanobTabe3a").val());
     $("#selectedTabi3aAb3adWest").text($("#ab3adGharbTabe3a").val());
     
-    $("#selectedAlehdathiat").text($("#alehdathiat").val());
+    // $("#selectedAlehdathiat").text($("#alehdathiat").val());
 
     // load the image into the bigger image preview
     var reader = new FileReader();
@@ -140,7 +146,6 @@ $("#fifthScreenPrintButton").click(function(){
     // var ua = navigator.userAgent.toLowerCase();
     // var isAndroid = ua.indexOf("android") > -1;
     window.print();
-
     // if (isAndroid) {
     //     // https://developers.google.com/cloud-print/docs/gadget
     //     // var gadget = new cloudprint.Gadget();
@@ -155,4 +160,8 @@ $("#fifthScreenPrintButton").click(function(){
 $("#fifthScreenPrevButton").click(function(){
     $("#fourth-screen").show();
     $("#fifth-screen").hide();
+});
+
+$("#fifthScreenSaveButton").click(function(){
+
 });

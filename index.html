@@ -76,6 +76,9 @@
                     <option value="توثيق مخالفة">
                         توثيق مخالفة
                     </option>
+                    <option value="اشعار تبليغ">
+                        اشعار تبليغ
+                    </option>
                 </select>
 
                 <!-- <label for="altari5">التاريخ</label>
@@ -94,8 +97,9 @@
             </div>
 
             <div class="col-md-6 col-sm-12 my-2">
-                <label for="alraqamAlmoahad">الرقم الموحد / البلاغ مع التاريخ</label>
+                <label for="alraqamAlmoahad">الرقم الموحد / البلاغ</label>
                 <input type="text" id="alraqamAlmoahad" />
+                <input type="text" id="tari5AlraqamAlmoahad" placeholder="التاريخ"/>
             </div>
 
             <div class="col-md-6 col-sm-12 my-2">
@@ -159,8 +163,9 @@
             </div>
 
             <div class="col-md-6 col-sm-12 my-2">
-                <label for="raqamAlro5sa">رقم الرخصة مع التاريخ</label>
+                <label for="raqamAlro5sa">رقم الرخصة</label>
                 <input type="text" id="raqamAlro5sa" />
+                <input type="text" id="tari5RaqamAlro5sa" placeholder="التاريخ"/>
             </div>
 
             <div class="col-md-6 col-sm-12 my-2">
@@ -194,26 +199,57 @@
         
                 <div class="col-md-6 col-sm-12 my-2">
                   <label >شمال</label>
-                  <input type="text" id="hododShemalRo5sa"  placeholder="الحدود"/>
-                  <input type="text" id="ab3adShemalRo5sa" placeholder="الابعاد"/>
+                  <select id="hododShemalRo5sa">
+                    <option value="جار">
+                        جار
+                    </option>
+                    <option value="شارع">
+                        شارع
+                    </option>
+                  </select>
+                  <input type="text" id="ab3adShemalRo5sa" placeholder="ارتداد"/>
                 </div>
       
                 <div class="col-md-6 col-sm-12 my-2">
                   <label >جنوب</label>
-                  <input type="text" id="hododGanobRo5sa"  placeholder="الحدود"/>
-                  <input type="text" id="ab3adGanobRo5sa" placeholder="الابعاد"/>
+                  <!-- <input type="text" id="hododGanobRo5sa"  placeholder="الحدود"/> -->
+                  <select id="hododGanobRo5sa">
+                    <option value="جار">
+                        جار
+                    </option>
+                    <option value="شارع">
+                        شارع
+                    </option>
+                  </select>
+                  <input type="text" id="ab3adGanobRo5sa" placeholder="ارتداد"/>
                 </div>
           
                 <div class="col-md-6 col-sm-12 my-2">
                   <label >شرق</label>
-                  <input type="text" id="hododSharqRo5sa"  placeholder="الحدود"/>
-                  <input type="text" id="ab3adSharqRo5sa" placeholder="الابعاد"/>
+                  <!-- <input type="text" id="hododSharqRo5sa"  placeholder="الحدود"/> -->
+                  <select id="hododSharqRo5sa">
+                    <option value="جار">
+                        جار
+                    </option>
+                    <option value="شارع">
+                        شارع
+                    </option>
+                  </select>
+                  <input type="text" id="ab3adSharqRo5sa" placeholder="ارتداد"/>
                 </div>
       
                 <div class="col-md-6 col-sm-12 my-2">
                   <label >غرب</label>
-                  <input type="text" id="hododGharbRo5sa"  placeholder="الحدود"/>
-                  <input type="text" id="ab3adGharbRo5sa" placeholder="الابعاد"/>
+                  <!-- <input type="text" id="hododGharbRo5sa"  placeholder="الحدود"/> -->
+                  <select id="hododGharbRo5sa">
+                    <option value="جار">
+                        جار
+                    </option>
+                    <option value="شارع">
+                        شارع
+                    </option>
+                  </select>
+                  <input type="text" id="ab3adGharbRo5sa" placeholder="ارتداد"/>
                 </div>
       
               </div>
@@ -230,26 +266,58 @@
         
                 <div class="col-md-6 col-sm-12 my-2">
                     <label >شمال</label>
-                    <input type="text" id="hododShemalTabe3a"  placeholder="الحدود"/>
-                    <input type="text" id="ab3adShemalTabe3a" placeholder="الابعاد"/>
+                    <!-- <input type="text" id="hododShemalTabe3a"  placeholder="الحدود"/> -->
+                    <select id="hododShemalTabe3a">
+                        <option value="جار">
+                            جار
+                        </option>
+                        <option value="شارع">
+                            شارع
+                        </option>
+                      </select>
+                    <input type="text" id="ab3adShemalTabe3a" placeholder="ارتداد"/>
                   </div>
         
                   <div class="col-md-6 col-sm-12 my-2">
                     <label >جنوب</label>
-                    <input type="text" id="hododGanobTabe3a"  placeholder="الحدود"/>
-                    <input type="text" id="ab3adGanobTabe3a" placeholder="الابعاد"/>
+                    <!-- <input type="text" id="hododGanobTabe3a"  placeholder="الحدود"/> -->
+                    <select id="hododGanobTabe3a">
+                        <option value="جار">
+                            جار
+                        </option>
+                        <option value="شارع">
+                            شارع
+                        </option>
+                      </select>
+                    <input type="text" id="ab3adGanobTabe3a" placeholder="ارتداد"/>
                   </div>
             
                   <div class="col-md-6 col-sm-12 my-2">
                     <label >شرق</label>
-                    <input type="text" id="hododSharqTabe3a"  placeholder="الحدود"/>
-                    <input type="text" id="ab3adSharqTabe3a" placeholder="الابعاد"/>
+                    <!-- <input type="text" id="hododSharqTabe3a"  placeholder="الحدود"/> -->
+                    <select id="hododSharqTabe3a">
+                        <option value="جار">
+                            جار
+                        </option>
+                        <option value="شارع">
+                            شارع
+                        </option>
+                      </select>
+                    <input type="text" id="ab3adSharqTabe3a" placeholder="ارتداد"/>
                   </div>
         
                   <div class="col-md-6 col-sm-12 my-2">
                     <label >غرب</label>
-                    <input type="text" id="hododGharbTabe3a"  placeholder="الحدود"/>
-                    <input type="text" id="ab3adGharbTabe3a" placeholder="الابعاد"/>
+                    <!-- <input type="text" id="hododGharbTabe3a"  placeholder="الحدود"/> -->
+                    <select id="hododGharbTabe3a">
+                        <option value="جار">
+                            جار
+                        </option>
+                        <option value="شارع">
+                            شارع
+                        </option>
+                      </select>
+                    <input type="text" id="ab3adGharbTabe3a" placeholder="ارتداد"/>
                   </div>
             </div>
 
@@ -265,10 +333,10 @@
                 <input type="file" id="alsoraAlkabira" />
             </div>
             
-            <div class="col-md-6 col-sm-12 my-2">
+            <!-- <div class="col-md-6 col-sm-12 my-2">
                 <label for="alehdathiat">الاحداثيات</label>
                 <input type="text" id="alehdathiat" />
-            </div>
+            </div> -->
         
         </div>
 
@@ -485,9 +553,10 @@
         
         
 
-        <div class="col-sm-12 my-2" id="fifthPartHidden">
+        <div id="specialArea" class="col-sm-12 my-2" id="fifthPartHidden">
             <input type="submit" id="fifthScreenPrevButton" value="السابق"/>
             <input type="submit" id="fifthScreenPrintButton" value="طباعة"/>
+            <!-- <input type="submit" id="fifthScreenSaveButton" value="حفظ"/> -->
         </div>
 
         <hr>
@@ -495,6 +564,7 @@
 
     <script src="https://www.google.com/cloudprint/client/cpgadget.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="node_modules/hijrah-date/hijrah-date.js"></script>
     <script src="index.js"></script>
 
     <!-- Optional JavaScript -->
