@@ -72,7 +72,8 @@ hr {
 
 #selectedBiggestImage {
     width: 100%;
-    height: 100%;
+    height: 300px;
+    object-fit: contain;
 }
 
 /* ******************************************************************************* */
@@ -98,6 +99,7 @@ hr {
 #fifth-screen {
     color: black;
     text-align: center;
+    height: 100%;
 }
 
 .image {
