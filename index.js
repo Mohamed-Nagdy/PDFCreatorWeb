@@ -161,7 +161,3 @@ $("#fifthScreenPrevButton").click(function(){
     $("#fourth-screen").show();
     $("#fifth-screen").hide();
 });
-
-$("#fifthScreenSaveButton").click(function(){
-
-});

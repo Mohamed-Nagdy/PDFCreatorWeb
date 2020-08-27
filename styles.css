@@ -18,10 +18,11 @@ hr {
 
 
 @media print {
-    #fifthPartHidden {
+    #hidden {
         visibility: hidden;
         color: white;
         background-color: white;
+        display: none;
     }
 }
 
