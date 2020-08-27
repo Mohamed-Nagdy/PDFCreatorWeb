@@ -108,7 +108,7 @@ $("#fourthScreenNextButton").click(function(){
     $("#selectedComment1").text($("#image1Comment").val());
     $("#selectedComment2").text($("#image2Comment").val());
     $("#selectedComment3").text($("#image3Comment").val());
-    $("#selectedNotes").text($("#notes").val());
+    $("#innerNoteSelected").text($("#notes").val());
 
     var reade1 = new FileReader();
     reade1.readAsDataURL(document.getElementById("image1").files[0]);

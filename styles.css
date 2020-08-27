@@ -136,7 +136,13 @@ border: 1px solid black;
 }
 
 #selectedNotes {
-    width: 40%;
+    width: 200px;
+    text-align: right;
+}
+
+#innerNoteSelected {
+    text-align: right;
+    margin: 10px;
 }
 
 #secondHeader {
