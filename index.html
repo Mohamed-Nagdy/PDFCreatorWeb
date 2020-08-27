@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- First Screen Components And Inputs -->
+    <div id="first-screen">
+        <div class="jumbotron first-screen-jumbotron">
+            <h1 class="display-4">معلومات مدخل البيانات</h1>
+        </div>
+    
+        <div class="row p-5 m-0">
+        
+          <div class="col-md-6 col-sm-12 my-2">
+            <label for="baladia">اسم البلدية</label>
+            <input type="text" id="baladia" />
+          </div>
+          <div class="col-md-6 col-sm-12 my-2">
+            <label for="entryUserName">اسم مدخل التقرير</label>
+            <input type="text" id="entryUserName" />
+          </div>
+    
+          <div class="col-md-6 col-sm-12 my-2">
+            <label for="raiesAlqism">اسم رئيس القسم</label>
+            <input type="text" id="raiesAlqism" />
+          </div>
+          <div class="col-md-6 col-sm-12 my-2">
+            <label for="raiesAlbaladia">اسم رئيس البلدية</label>
+            <input type="text" id="raiesAlbaladia" />
+          </div>
+
+          <div class="col-sm-12 my-2">
+            <input type="submit" id="firstScreenSubmit" value="التالي"/>
+          </div>
+
+        </div>  
+        <hr>
+    </div>
+
+    
+
+    <!-- Second Screen Components And Inputs -->
+    <div id="second-screen">
+        <div class="jumbotron second-screen-jumbotron">
+            <h1 class="display-4">المعلومات المدخلة</h1>
+        </div>
+        <div class="row p-5 m-0">
+            <div class="col-md-6 col-sm-12 my-2">
+
+                <label for="altaqrir">التقرير</label>
+                <!-- <input type="text" id="altaqrir" /> -->
+                <select name="" id="altaqrir">
+                    <option value="فني">
+                        فني
+                    </option>
+                    <option value="استطلاعي">
+                        استطلاعي
+                    </option>
+                    <option value="توثيق مخالفة">
+                        توثيق مخالفة
+                    </option>
+                </select>
+
+                <!-- <label for="altari5">التاريخ</label>
+                <input type="date" name="altari5" id="altari5"> -->
+
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" />
+            </div>
+    
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="alsgilAlmadaniOrAltogary">السجل المدني / التجاري</label>
+                <input type="text" id="alsgilAlmadaniOrAltogary" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="alraqamAlmoahad">الرقم الموحد / البلاغ مع التاريخ</label>
+                <input type="text" id="alraqamAlmoahad" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="alhai">الحي</label>
+                <input type="text" id="alhai" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="raqamAlqit3a">رقم القطعة</label>
+                <input type="text" id="raqamAlqit3a" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="almo5atat">المخطط</label>
+                <input type="text" id="almo5atat" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="no3Altaqrir">نوع التقرير</label>
+                <select id="no3Altaqrir">
+                    <option value="اتمام بناء">
+                        اتمام بناء
+                    </option>
+                    <option value="نقل ملكية">
+                        نقل ملكية
+                    </option>
+                    <option value="تجديد">
+                        تجديد
+                    </option>
+                    <option value="شكوى">
+                        شكوى
+                    </option>
+                    <option value="توجيه">
+                        توجيه
+                    </option>
+                </select>
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="no3Almabna">نوع المبنى</label>
+                <select id="no3Almabna">
+                    <option value="فيلا">
+                        فيلا
+                    </option>
+                    <option value="عمارة">
+                        عمارة
+                    </option>
+                    <option value="شقة">
+                        شقة
+                    </option>
+                    <option value="حوش">
+                        حوش
+                    </option>
+                    <option value="شارع">
+                        شارع
+                    </option>
+                    <option value="محل">
+                        محل 
+                    </option>
+                </select>
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="raqamAlro5sa">رقم الرخصة مع التاريخ</label>
+                <input type="text" id="raqamAlro5sa" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="raqamAltawasol">رقم التواصل</label>
+                <input type="text" id="raqamAltawasol" />
+            </div>
+
+            <div class="col-sm-12 my-2">
+                <input type="submit" id="secondScreenPrevButton" value="السابق"/>
+                <input type="submit" id="secondScreenNextButton" value="التالي"/>
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+        
+    
+
+    <!-- Third Screen Components And Inputs -->
+    <div id="third-screen">
+        <div class="jumbotron third-screen-jumbotron">
+            <h1 class="display-4">معلومات الموقع</h1>
+        </div>
+    
+        <div>
+            <div class="jumbotron third-screen-jumbotron">
+                <h3 class="">حسب الرخصة</h3>
+            </div>
+
+            <div class="row p-5 m-0">
+        
+                <div class="col-md-6 col-sm-12 my-2">
+                  <label >شمال</label>
+                  <input type="text" id="hododShemalRo5sa"  placeholder="الحدود"/>
+                  <input type="text" id="ab3adShemalRo5sa" placeholder="الابعاد"/>
+                </div>
+      
+                <div class="col-md-6 col-sm-12 my-2">
+                  <label >جنوب</label>
+                  <input type="text" id="hododGanobRo5sa"  placeholder="الحدود"/>
+                  <input type="text" id="ab3adGanobRo5sa" placeholder="الابعاد"/>
+                </div>
+          
+                <div class="col-md-6 col-sm-12 my-2">
+                  <label >شرق</label>
+                  <input type="text" id="hododSharqRo5sa"  placeholder="الحدود"/>
+                  <input type="text" id="ab3adSharqRo5sa" placeholder="الابعاد"/>
+                </div>
+      
+                <div class="col-md-6 col-sm-12 my-2">
+                  <label >غرب</label>
+                  <input type="text" id="hododGharbRo5sa"  placeholder="الحدود"/>
+                  <input type="text" id="ab3adGharbRo5sa" placeholder="الابعاد"/>
+                </div>
+      
+              </div>
+
+        </div>
+        
+        <div>
+
+            <div class="jumbotron third-screen-jumbotron">
+                <h3 class="">حسب الطبيعة</h3>
+            </div>
+
+            <div class="row p-5 m-0">
+        
+                <div class="col-md-6 col-sm-12 my-2">
+                    <label >شمال</label>
+                    <input type="text" id="hododShemalTabe3a"  placeholder="الحدود"/>
+                    <input type="text" id="ab3adShemalTabe3a" placeholder="الابعاد"/>
+                  </div>
+        
+                  <div class="col-md-6 col-sm-12 my-2">
+                    <label >جنوب</label>
+                    <input type="text" id="hododGanobTabe3a"  placeholder="الحدود"/>
+                    <input type="text" id="ab3adGanobTabe3a" placeholder="الابعاد"/>
+                  </div>
+            
+                  <div class="col-md-6 col-sm-12 my-2">
+                    <label >شرق</label>
+                    <input type="text" id="hododSharqTabe3a"  placeholder="الحدود"/>
+                    <input type="text" id="ab3adSharqTabe3a" placeholder="الابعاد"/>
+                  </div>
+        
+                  <div class="col-md-6 col-sm-12 my-2">
+                    <label >غرب</label>
+                    <input type="text" id="hododGharbTabe3a"  placeholder="الحدود"/>
+                    <input type="text" id="ab3adGharbTabe3a" placeholder="الابعاد"/>
+                  </div>
+            </div>
+
+        </div>
+        
+
+       
+
+        <div class="row p-5 m-0">
+            
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="alsoraAlkabira">اضافة صورة</label>
+                <input type="file" id="alsoraAlkabira" />
+            </div>
+            
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="alehdathiat">الاحداثيات</label>
+                <input type="text" id="alehdathiat" />
+            </div>
+        
+        </div>
+
+        <div class="col-sm-12 my-2">
+            <input type="submit" id="thirdScreenPrevButton" value="السابق"/>
+            <input type="submit" id="thirdScreenNextButton" value="التالي"/>
+        </div>
+
+        <hr>
+    </div>
+    
+
+    
+
+    <!-- Fourth Screen Components And Inputs -->
+    <div id="fourth-screen">
+        
+        <div class="jumbotron fourth-screen-jumbotron">
+            <h1 class="display-4">ادخال الصور</h1>
+        </div>
+
+        <div class="row p-5 m-0">
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="image1Comment">التعليق 1</label>
+                <input type="text" id="image1Comment">
+                <input type="file" id="image1" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="image2Comment">التعليق 2</label>
+                <input type="text" id="image2Comment">
+                <input type="file" id="image2" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="image3Comment">التعليق 3</label>
+                <input type="text" id="image3Comment">
+                <input type="file" id="image3" />
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
+                <label for="notes">ملاحظات</label>
+                <textarea id="notes"></textarea>
+            </div>
+        </div>
+
+        <div class="col-sm-12 my-2">
+            <input type="submit" id="fourthScreenPrevButton" value="السابق"/>
+            <input type="submit" id="fourthScreenNextButton" value="التالي"/>
+        </div>
+
+        <hr>
+    </div>
+    
+    <!-- Fifth Screen Components And Inputs -->
+    <div id="fifth-screen">
+
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-4">
+                <p>المملكة العربية السعودية</p>
+                <p>وزارة الشئون البلدية والقروية</p>
+                <p>امنة منطقة الرياض</p>
+                <div id="selectedIsmAlbaladia"></div>
+            </div>
+            
+            <div class="col-4 secondHeaderImage">
+                <img class="imagesInSecondHeader" src="middle-logo.png" alt="">
+            </div>
+
+            <div class="col-4 secondHeaderImage">
+                <img class="imagesInSecondHeader" src="left-logo.png" alt="">
+            </div>
+            
+        </div>
+
+        <div class="row" id="secondHeader">
+            <div class="col-sm-12 my-2">
+                <p id="selectedAltaqrir">تقرير</p>
+                <p id="selectedAltari5">تاريخ </p>
+            </div>
+        </div>
+
+        <div class="firstTable">
+            <table>
+                <tr>
+                    <td>الاسم</td>
+                    <td colspan="2" id="selectedName"></td>
+                    <td>السجل المدني / التجاري</td>
+                    <td id="selectedAlsegelAlmadaniOrAltogary"></td>
+                    <td>الرقم الموحد / البلاغ</td>
+                    <td colspan="2" id="selectedAlraqamAlmoahad"></td>
+                </tr>
+                <tr>
+                    <td>الحي</td>
+                    <td colspan="2" id="selectedAlhai"></td>
+                    <td>رقم المخطط</td>
+                    <td id="selectedAlmo5atat"></td>
+                    <td>رقم القطعة</td>
+                    <td colspan="2" id="selectedRaqamAlqit3a"></td>
+                </tr>
+                <tr>
+                    <td>نوع التقرير</td>
+                    <td id="selectedNo3Altaqrir"></td>
+                    <td>نوع المبنى</td>
+                    <td id="selectedAlmabna"></td>
+                    <td>رقم الرخصة</td>
+                    <td id="selectedRaqamAlro5sa"></td>
+                    <td>رقم الاتصال</td>
+                    <td id="selectedRaqamAlitisal"></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td colspan="5">حسب الرخصة</td>
+                    <td colspan="6">حسب الطبيعة</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>شمال</td>
+                    <td>شرق</td>
+                    <td>جنوب</td>
+                    <td>غرب</td>
+                    <td></td>
+                    <td>شمال</td>
+                    <td>شرق</td>
+                    <td>جنوب</td>
+                    <td>غرب</td>
+                    <td>مقدار الاختلاف</td>
+                </tr>
+                <tr>
+                    <td>الحدود</td>
+                    <td id="selectedRo5saHododNorth"></td>
+                    <td id="selectedRo5saHododEast"></td>
+                    <td id="selectedRo5saHododSouth"></td>
+                    <td id="selectedRo5saHododWest"></td>
+                    <td>الحدود</td>
+                    <td id="selectedTabi3aHododNorth"></td>
+                    <td id="selectedTabi3aHododEast"></td>
+                    <td id="selectedTabi3aHododSouth"></td>
+                    <td id="selectedTabi3aHododWest"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>الابعاد</td>
+                    <td id="selectedRo5saAb3adNorth"></td>
+                    <td id="selectedRo5saAb3adEast"></td>
+                    <td id="selectedRo5saAb3adSouth"></td>
+                    <td id="selectedRo5saAb3adWest"></td>
+                    <td>الابعاد</td>
+                    <td id="selectedTabi3aAb3adNorth"></td>
+                    <td id="selectedTabi3aAb3adEast"></td>
+                    <td id="selectedTabi3aAb3adSouth"></td>
+                    <td id="selectedTabi3aAb3adWest"></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>الملاحظات</td>
+                    <td>صورة</td>
+                </tr>
+
+                <tr>
+                    <td id="selectedNotes"></td>
+                    <td id="bigImageCell" colspan="2"><img id="selectedBiggestImage" src="#" alt="your image" /></td>
+                </tr>
+
+                <tr>
+                    <td>الاحداثيات</td>
+                    <td id="selectedAlehdathiat"></td>
+                </tr>
+
+            </table>
+
+            <table>
+                <tr>
+                    <td colspan="3">صور الموقع</td>
+                </tr>
+                <tr>
+                    <td><img id="selectedImage1" src="#" alt="your image" /></td>
+                    <td><img id="selectedImage2" src="#" alt="your image" /></td>
+                    <td><img id="selectedImage3" src="#" alt="your image" /></td>
+                </tr>
+
+                <tr>
+                    <td id="selectedComment1"></td>
+                    <td id="selectedComment2"></td>
+                    <td id="selectedComment3"></td>
+                </tr>
+
+            </table>
+
+            <table>
+                <tr>
+                    <td>الملاحظات :</td>
+                    <td colspan="3">............................................................................</td>
+                    <td>توجهات:</td>
+                    <td colspan="3">............................................................................</td>
+                </tr>
+                <tr>
+                    <td>المراقب</td>
+                    <td>....................................</td>
+                    <td>رئيس القسم</td>
+                    <td>....................................</td>
+                    <td>توقيع</td>
+                    <td>....................................</td>
+                    <td>رئيس البلدية</td>
+                    <td>....................................</td>
+                </tr>
+            </table>
+        </div>
+        
+        
+
+        <div class="col-sm-12 my-2" id="fifthPartHidden">
+            <input type="submit" id="fifthScreenPrevButton" value="السابق"/>
+            <input type="submit" id="fifthScreenPrintButton" value="طباعة"/>
+        </div>
+
+        <hr>
+    </div>
+
+    <script src="https://www.google.com/cloudprint/client/cpgadget.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

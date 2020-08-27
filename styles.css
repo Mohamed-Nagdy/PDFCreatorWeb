@@ -1,0 +1,143 @@
+/* General styles */
+body{
+    color: white;
+}
+
+hr {
+    color: grey;
+    height:2px;
+    border-width:0;
+    background-color:gray
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: none;
+    margin: 0;
+}
+
+
+@media print {
+    #fifthPartHidden {
+        visibility: hidden;
+        color: white;
+        background-color: white;
+    }
+}
+
+/* ******************************************************************************* */
+/* all first screen styles */
+
+#first-screen {
+    background-color: #1fab89;
+    margin: 10px;
+}
+
+.first-screen-jumbotron{
+    background-color: #1fab89;
+}
+
+.secondHeaderImage{
+    object-fit: cover;
+}
+
+.imagesInSecondHeader {
+    width: 100px;
+    height: 100px;
+}
+
+/* ******************************************************************************* */
+/* all second screen styles */
+
+#second-screen {
+    background-color: #62d2a2;
+    margin: 10px;
+}
+
+.second-screen-jumbotron{
+    background-color: #62d2a2;
+}
+
+/* ******************************************************************************* */
+/* all third screen styles */
+
+#third-screen {
+    background-color: #1fab89;
+    margin: 10px;    
+}
+
+.third-screen-jumbotron{
+    background-color: #1fab89;
+}
+
+#selectedBiggestImage {
+    width: 100%;
+    height: 100%;
+}
+
+/* ******************************************************************************* */
+/* all fourth screen styles */
+
+#fourth-screen {
+    background-color: #62d2a2;
+    margin: 10px;
+}
+
+.fourth-screen-jumbotron{
+    background-color: #62d2a2;
+}
+
+#selectedImage1, #selectedImage2, #selectedImage3{
+    width: 200px;
+    height: 300px;
+} 
+
+/* ******************************************************************************* */
+/* all fifth screen styles */
+
+#fifth-screen {
+    color: black;
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    display: inline-block;
+    text-align: start;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  
+table, th, td {
+border: 1px solid black;
+}
+
+#bigImageCell{
+    width: 60%;
+}
+
+#selectedNotes {
+    width: 40%;
+}
+
+#secondHeader {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
