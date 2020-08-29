@@ -154,16 +154,23 @@ $("#fourthScreenPrevButton").click(function(){
 $("#fifthScreenPrintButton").click(function(){
     // var ua = navigator.userAgent.toLowerCase();
     // var isAndroid = ua.indexOf("android") > -1;
-    window.print();
-    // if (isAndroid) {
-    //     // https://developers.google.com/cloud-print/docs/gadget
-    //     // var gadget = new cloudprint.Gadget();
-    //     // gadget.setPrintDocument("url", $('title').html(), window.location.href, "utf-8");
-    //     // gadget.openPrintDialog();
-    //     window.print();
-    //   } else {
-    //     window.print();
-    //   }
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    if(isIOS)
+    {
+        $("#selectedBiggestImage").height(250);
+        $("#selectedImage1").height(250);
+        $("#selectedImage2").height(250);
+        $("#selectedImage3").height(250);
+        $("table").css({'margin-top': '10px', 'margin-bottom': '10px'});
+        $("#secondHeader").css({'margin-top': '20px', 'margin-bottom': '20px'});
+        window.print();
+
+    }
+    else
+    {
+        window.print();
+    }
 });
 
 $("#fifthScreenPrevButton").click(function(){
