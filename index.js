@@ -231,6 +231,8 @@ $("#fifthScreenPrintButton").click(function(){
         $("#selectedImage3").height(250);
         $("table").css({'margin-top': '10px', 'margin-bottom': '10px'});
         $("#secondHeader").css({'margin-top': '20px', 'margin-bottom': '20px'});
+        $(".changedHeightRow").css({'height': '30px'});
+
         window.print();
 
     }

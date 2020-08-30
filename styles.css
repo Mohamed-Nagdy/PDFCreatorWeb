@@ -17,8 +17,8 @@ hr {
 }
 
 .redText {
-    color: red;
-    font-weight: 600;
+    color: black;
+    font-weight: 700;
 }
 
 @media print {
@@ -98,6 +98,15 @@ hr {
     height: 300px;
 } 
 
+#notes {
+    width: 90%;
+    height: 150px;
+}
+
+.notesDiv {
+    text-align: center;
+}
+
 /* ******************************************************************************* */
 /* all fifth screen styles */
 
@@ -153,4 +162,12 @@ border: 1px solid black;
 #secondHeader {
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+#inlineBlockElement {
+    display: block;
+}
+
+.changedHeightRow {
+    height: 50px;
 }

@@ -97,7 +97,7 @@
             </div>
 
             <div class="col-md-6 col-sm-12 my-2">
-                <label for="alraqamAlmoahad">الرقم الموحد / البلاغ</label>
+                <label for="alraqamAlmoahad">الرقم الموحد / البلاغ / الطلب</label>
                 <input type="text" id="alraqamAlmoahad" />
                 <input type="text" id="tari5AlraqamAlmoahad" placeholder="التاريخ"/>
             </div>
@@ -278,8 +278,8 @@
                     </option>
 
                   </select>
-                  <input type="text" id="ab3adShemalRo5sa" placeholder="ارتداد"/>
-                  <input type="text" id="ab3adShemalTabe3a" placeholder="ارتداد"/>
+                  <input type="text" id="ab3adShemalRo5sa" placeholder="ارتداد حسب الرخصة"/>
+                  <input type="text" id="ab3adShemalTabe3a" placeholder="ارتداد حسب الطبيعة"/>
                 </div>
       
                 <div class="col-md-6 col-sm-12 my-2">
@@ -363,8 +363,8 @@
                         ممر 12
                     </option>
                   </select>
-                  <input type="text" id="ab3adGanobRo5sa" placeholder="ارتداد"/>
-                  <input type="text" id="ab3adGanobTabe3a" placeholder="ارتداد"/>
+                  <input type="text" id="ab3adGanobRo5sa" placeholder="ارتداد حسب الرخصة"/>
+                  <input type="text" id="ab3adGanobTabe3a" placeholder="ارتداد حسب الطبيعة"/>
                 </div>
           
                 <div class="col-md-6 col-sm-12 my-2">
@@ -448,8 +448,8 @@
                         ممر 12
                     </option>
                   </select>
-                  <input type="text" id="ab3adSharqRo5sa" placeholder="ارتداد"/>
-                  <input type="text" id="ab3adSharqTabe3a" placeholder="ارتداد"/>
+                  <input type="text" id="ab3adSharqRo5sa" placeholder="ارتداد حسب الرخصة"/>
+                  <input type="text" id="ab3adSharqTabe3a" placeholder="ارتداد حسب الطبيعة"/>
                 </div>
       
                 <div class="col-md-6 col-sm-12 my-2">
@@ -533,8 +533,8 @@
                         ممر 12
                     </option>
                   </select>
-                  <input type="text" id="ab3adGharbRo5sa" placeholder="ارتداد"/>
-                  <input type="text" id="ab3adGharbTabe3a" placeholder="ارتداد"/>
+                  <input type="text" id="ab3adGharbRo5sa" placeholder="ارتداد حسب الرخصة"/>
+                  <input type="text" id="ab3adGharbTabe3a" placeholder="ارتداد حسب الطبيعة"/>
                 </div>
       
               </div>
@@ -658,7 +658,7 @@
                 <input type="file" id="image3" />
             </div>
 
-            <div class="col-md-6 col-sm-12 my-2">
+            <div class="col-12 my-2 notesDiv">
                 <label for="notes">ملاحظات</label>
                 <textarea id="notes"></textarea>
             </div>
@@ -677,14 +677,14 @@
     <div id="fifth-screen">
 
         <div class="row" style="margin-top: 50px;">
-            <div class="col-4">
-                <p>المملكة العربية السعودية</p>
-                <p>وزارة الشئون البلدية والقروية</p>
-                <p>امنة منطقة الرياض</p>
-                <div id="selectedIsmAlbaladia" class="redText"></div>
+            <div class="col-3">
+                <p class="inlineBlockElement">المملكة العربية السعودية</p>
+                <p class="inlineBlockElement">وزارة الشئون البلدية والقروية</p>
+                <p class="inlineBlockElement">امنة منطقة الرياض</p><br>
+                <div id="selectedIsmAlbaladia" class="redText inlineBlockElement"></div>
             </div>
             
-            <div class="col-4 secondHeaderImage">
+            <div class="col-5 secondHeaderImage">
                 <img class="imagesInSecondHeader" src="middle-logo.png" alt="">
             </div>
 
@@ -817,13 +817,13 @@
             </table>
 
             <table>
-                <tr>
+                <tr class="changedHeightRow">
                     <td class="redText">الملاحظات :</td>
                     <td colspan="3">............................................................................</td>
                     <td class="redText">توجهات:</td>
                     <td colspan="3">............................................................................</td>
                 </tr>
-                <tr>
+                <tr class="changedHeightRow">
                     <td class="redText">المراقب</td>
                     <td id="selectedAlmoraqib">....................................</td>
                     <td class="redText">رئيس القسم</td>
