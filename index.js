@@ -6,6 +6,13 @@ $("#third-screen").hide();
 $("#fourth-screen").hide();
 $("#fifth-screen").hide();
 
+function sleep(miliseconds) {
+    var currentTime = new Date().getTime();
+ 
+    while (currentTime + miliseconds >= new Date().getTime()) {
+    }
+ }
+
 // get the current date
 var curday = function(sp){
     today = new Date();
@@ -122,10 +129,11 @@ $("#thirdScreenPrevButton").click(function(){
 // fourth screen buttons
 
 $("#fourthScreenNextButton").click(function(){
+
     $("#fourth-screen").hide();
     $("#fifth-screen").show();
 
-    var innerNotes = $("#notes").val().replace('\n', '<br>');
+    // var innerNotes = $("#notes").val().replace('\n', '<br>');
 
     // all operations will done here
     $("#selectedComment1").text($("#image1Comment").val());
@@ -158,26 +166,53 @@ $("#fourthScreenPrevButton").click(function(){
 });
 
 $("#fourthScreenPrintButton").click(function(){
-    $("#fourth-screen").hide();
-    $("#fifth-screen").show();
+    
+    // // all operations will done here
+    // $("#selectedComment1").text($("#image1Comment").val());
+    // $("#selectedComment2").text($("#image2Comment").val());
+    // $("#selectedComment3").text($("#image3Comment").val());
+    // $("#innerNoteSelected").html($("#notes").val().replace(/\n/g, '<br>'));
 
-    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    // var reade1 = new FileReader();
+    // reade1.readAsDataURL(document.getElementById("image1").files[0]);
+    // reade1.onload = function (oFREvent) {
+    //     document.getElementById("selectedImage1").src = oFREvent.target.result;
+    // };
 
-    if(isIOS)
-    {
-        $("#selectedBiggestImage").height(250);
-        $("#selectedImage1").height(250);
-        $("#selectedImage2").height(250);
-        $("#selectedImage3").height(250);
-        $("table").css({'margin-top': '10px', 'margin-bottom': '10px'});
-        $("#secondHeader").css({'margin-top': '20px', 'margin-bottom': '20px'});
-        window.print();
+    // var reader2 = new FileReader();
+    // reader2.readAsDataURL(document.getElementById("image2").files[0]);
+    // reader2.onload = function (oFREvent) {
+    //     document.getElementById("selectedImage2").src = oFREvent.target.result;
+    // };
 
-    }
-    else
-    {
-        window.print();
-    }    
+    // var reader3 = new FileReader();
+    // reader3.readAsDataURL(document.getElementById("image3").files[0]);
+    // reader3.onload = function (oFREvent) {
+    //     document.getElementById("selectedImage3").src = oFREvent.target.result;
+    // };
+
+    // sleep(2000);
+
+    // $("#fourth-screen").hide();
+    // $("#fifth-screen").show();
+
+    // var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    // if(isIOS)
+    // {
+    //     $("#selectedBiggestImage").height(250);
+    //     $("#selectedImage1").height(250);
+    //     $("#selectedImage2").height(250);
+    //     $("#selectedImage3").height(250);
+    //     $("table").css({'margin-top': '10px', 'margin-bottom': '10px'});
+    //     $("#secondHeader").css({'margin-top': '20px', 'margin-bottom': '20px'});
+    //     window.print();
+
+    // }
+    // else
+    // {
+    //     window.print();
+    // }    
 
 });
 
