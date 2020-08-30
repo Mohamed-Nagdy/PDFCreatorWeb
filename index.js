@@ -25,6 +25,10 @@ $("#firstScreenSubmit").click(function(){
 
     
     $("#selectedIsmAlbaladia").html( "</p>" + "بلدية " + $("#baladia").val() + "<p>");
+    $("#selectedAlmoraqib").text($("#entryUserName").val());
+    $("#selectedRaiesAlqism").text($("#raiesAlqism").val());
+    $("#selectedRaiesAlbaladia").text($("#raiesAlbaladia").val());
+
 });
 
 
@@ -40,12 +44,12 @@ $("#secondScreenNextButton").click(function(){
     var date = hijrahDate._year + "/" + hijrahDate._monthOfYear + "/" + hijrahDate._dayOfMonth;
 
     // get the tari5AlraqamAlmoahad in hijri
-    var tari5AlraqamAlmoahad = new HijrahDate($("#tari5AlraqamAlmoahad").val());
-    var newTari5AlraqamAlmoahad = tari5AlraqamAlmoahad._year + "/" + tari5AlraqamAlmoahad._monthOfYear + "/" + tari5AlraqamAlmoahad._dayOfMonth;
+    // var tari5AlraqamAlmoahad = new HijrahDate($("#tari5AlraqamAlmoahad").val());
+    // var newTari5AlraqamAlmoahad = tari5AlraqamAlmoahad._year + "/" + tari5AlraqamAlmoahad._monthOfYear + "/" + tari5AlraqamAlmoahad._dayOfMonth;
 
-    // get tari5RaqamAlro5sa in hijri
-    var tari5RaqamAlro5sa = new HijrahDate($("#tari5RaqamAlro5sa").val());
-    var newTari5RaqamAlro5sa = tari5RaqamAlro5sa._year + "/" + tari5RaqamAlro5sa._monthOfYear + "/" + tari5RaqamAlro5sa._dayOfMonth;
+    // // get tari5RaqamAlro5sa in hijri
+    // var tari5RaqamAlro5sa = new HijrahDate($("#tari5RaqamAlro5sa").val());
+    // var newTari5RaqamAlro5sa = tari5RaqamAlro5sa._year + "/" + tari5RaqamAlro5sa._monthOfYear + "/" + tari5RaqamAlro5sa._dayOfMonth;
 
 
     // all operations will done here
@@ -53,13 +57,15 @@ $("#secondScreenNextButton").click(function(){
     $("#selectedAltari5").text("التاريخ : " + curday('/') + " التاريخ الهجري : " + date);
     $("#selectedName").text($("#name").val());
     $("#selectedAlsegelAlmadaniOrAltogary").text($("#alsgilAlmadaniOrAltogary").val());
-    $("#selectedAlraqamAlmoahad").text($("#alraqamAlmoahad").val() +" بتاريخ " + newTari5AlraqamAlmoahad);
+    $("#selectedAlraqamAlmoahad").text($("#alraqamAlmoahad").val());
+    $("#selectedTari5AlraqamAlmoahad").text($("#tari5AlraqamAlmoahad").val()); //
     $("#selectedAlhai").text($("#alhai").val());
     $("#selectedRaqamAlqit3a").text($("#raqamAlqit3a").val());
     $("#selectedAlmo5atat").text($("#almo5atat").val());
     $("#selectedNo3Altaqrir").text($("#no3Altaqrir").val());
     $("#selectedAlmabna").text($("#no3Almabna").val());
-    $("#selectedRaqamAlro5sa").text($("#raqamAlro5sa").val() + " بتاريخ " + newTari5RaqamAlro5sa);
+    $("#selectedRaqamAlro5sa").text($("#raqamAlro5sa").val());
+    $("#selectedTari5RaqamAlro5sa").text($("#tari5RaqamAlro5sa").val()); //
     $("#selectedRaqamAlitisal").text($("#raqamAltawasol").val());
 
 });
@@ -87,10 +93,10 @@ $("#thirdScreenNextButton").click(function(){
     $("#selectedRo5saAb3adSouth").text($("#ab3adGanobRo5sa").val());
     $("#selectedRo5saAb3adWest").text($("#ab3adGharbRo5sa").val());
     
-    $("#selectedTabi3aHododNorth").text($("#hododShemalTabe3a").val());
-    $("#selectedTabi3aHododEast").text($("#hododSharqTabe3a").val());
-    $("#selectedTabi3aHododSouth").text($("#hododGanobTabe3a").val());
-    $("#selectedTabi3aHododWest").text($("#hododGharbTabe3a").val());
+    $("#selectedTabi3aHododNorth").text($("#hododShemalRo5sa").val());
+    $("#selectedTabi3aHododEast").text($("#hododSharqRo5sa").val());
+    $("#selectedTabi3aHododSouth").text($("#hododGanobRo5sa").val());
+    $("#selectedTabi3aHododWest").text($("#hododGharbRo5sa").val());
 
     $("#selectedTabi3aAb3adNorth").text($("#ab3adShemalTabe3a").val());
     $("#selectedTabi3aAb3adEast").text($("#ab3adSharqTabe3a").val());
@@ -119,11 +125,13 @@ $("#fourthScreenNextButton").click(function(){
     $("#fourth-screen").hide();
     $("#fifth-screen").show();
 
+    var innerNotes = $("#notes").val().replace('\n', '<br>');
+
     // all operations will done here
     $("#selectedComment1").text($("#image1Comment").val());
     $("#selectedComment2").text($("#image2Comment").val());
     $("#selectedComment3").text($("#image3Comment").val());
-    $("#innerNoteSelected").text($("#notes").val());
+    $("#innerNoteSelected").html($("#notes").val().replace(/\n/g, '<br>'));
 
     var reade1 = new FileReader();
     reade1.readAsDataURL(document.getElementById("image1").files[0]);
@@ -147,6 +155,30 @@ $("#fourthScreenNextButton").click(function(){
 $("#fourthScreenPrevButton").click(function(){
     $("#third-screen").show();
     $("#fourth-screen").hide();
+});
+
+$("#fourthScreenPrintButton").click(function(){
+    $("#fourth-screen").hide();
+    $("#fifth-screen").show();
+
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    if(isIOS)
+    {
+        $("#selectedBiggestImage").height(250);
+        $("#selectedImage1").height(250);
+        $("#selectedImage2").height(250);
+        $("#selectedImage3").height(250);
+        $("table").css({'margin-top': '10px', 'margin-bottom': '10px'});
+        $("#secondHeader").css({'margin-top': '20px', 'margin-bottom': '20px'});
+        window.print();
+
+    }
+    else
+    {
+        window.print();
+    }    
+
 });
 
 // fifth screen buttons
