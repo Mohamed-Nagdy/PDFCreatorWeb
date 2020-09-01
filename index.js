@@ -75,6 +75,10 @@ $("#secondScreenNextButton").click(function(){
     $("#selectedTari5RaqamAlro5sa").text($("#tari5RaqamAlro5sa").val()); //
     $("#selectedRaqamAlitisal").text($("#raqamAltawasol").val());
 
+    // added new
+    $("#selectedAlsak").text($("#alsak").val());
+    $("#selectedTari5Alsak").text($("#tari5Alsak").val());    
+
 });
 
 $("#secondScreenPrevButton").click(function(){
@@ -109,6 +113,13 @@ $("#thirdScreenNextButton").click(function(){
     $("#selectedTabi3aAb3adEast").text($("#ab3adSharqTabe3a").val());
     $("#selectedTabi3aAb3adSouth").text($("#ab3adGanobTabe3a").val());
     $("#selectedTabi3aAb3adWest").text($("#ab3adGharbTabe3a").val());
+
+    // added new
+    $("#selectedIsmAlshar3").text($("#ismAlshar3").val());
+    $("#selectedAlmisaha").text($("#almisaha").val());
+    $("#selectedTolAlwagha").text($("#tolAlwagha").val());
+    $("#selectedNo3Alnashat").text($("#no3Alnashat").val());
+    $("#selectedRaqamAl3adad").text($("#raqamAl3adad").val());
     
     // $("#selectedAlehdathiat").text($("#alehdathiat").val());
 

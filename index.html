@@ -103,6 +103,12 @@
             </div>
 
             <div class="col-md-6 col-sm-12 my-2">
+                <label for="alsak">الصك</label>
+                <input type="text" id="alsak" />
+                <input type="text" id="tari5Alsak" placeholder="التاريخ"/>
+            </div>
+
+            <div class="col-md-6 col-sm-12 my-2">
                 <label for="alhai">الحي</label>
                 <input type="text" id="alhai" />
             </div>
@@ -135,6 +141,27 @@
                     <option value="توجيه">
                         توجيه
                     </option>
+                    <option value="توجيه">
+                        تجزئة
+                    </option>
+                    <option value="توجيه">
+                        دمج
+                    </option>
+                    <option value="توجيه">
+                        اصدار
+                    </option>
+                    <option value="توجيه">
+                        جولة
+                    </option>
+                    <option value="توجيه">
+                        بدل فاقد
+                    </option>
+                    <option value="توجيه">
+                        تعديل
+                    </option>
+                    <option value="توجيه">
+                        الغاء رخصة
+                    </option>
                 </select>
             </div>
 
@@ -158,6 +185,33 @@
                     </option>
                     <option value="محل">
                         محل 
+                    </option>
+                    <option value="محل">
+                        مبسط 
+                    </option>
+                    <option value="محل">
+                        مستودع 
+                    </option>
+                    <option value="محل">
+                        معرض 
+                    </option>
+                    <option value="محل">
+                        ورشة 
+                    </option>
+                    <option value="محل">
+                        معمل 
+                    </option>
+                    <option value="محل">
+                        مصنع 
+                    </option>
+                    <option value="محل">
+                        ارض فضاء 
+                    </option>
+                    <option value="محل">
+                        مجمع 
+                    </option>
+                    <option value="محل">
+                        برج 
                     </option>
                 </select>
             </div>
@@ -196,6 +250,11 @@
             </div>
 
             <div class="row p-5 m-0">
+
+                <div class="col-md-6 col-sm-12 my-2">
+                    <label for="ismAlshar3">اسم الشارع</label>
+                    <input type="text" id="ismAlshar3" />
+                </div>
         
                 <div class="col-md-6 col-sm-12 my-2">
                   <label >شمال</label>
@@ -536,6 +595,27 @@
                   <input type="text" id="ab3adGharbRo5sa" placeholder="ارتداد حسب الرخصة"/>
                   <input type="text" id="ab3adGharbTabe3a" placeholder="ارتداد حسب الطبيعة"/>
                 </div>
+
+                <!-- Added New -->
+                <div class="col-md-6 col-sm-12 my-2">
+                    <label for="almisaha">المساحة</label>
+                    <input type="text" id="almisaha" />
+                </div>
+
+                <div class="col-md-6 col-sm-12 my-2">
+                    <label for="tolAlwagha">طول الواجهة</label>
+                    <input type="text" id="tolAlwagha" />
+                </div>
+
+                <div class="col-md-6 col-sm-12 my-2">
+                    <label for="no3Alnashat">نوع النشاط</label>
+                    <input type="text" id="no3Alnashat" />
+                </div>
+
+                <div class="col-md-6 col-sm-12 my-2">
+                    <label for="raqamAl3adad">رقم العداد</label>
+                    <input type="text" id="raqamAl3adad" />
+                </div>
       
               </div>
 
@@ -715,11 +795,14 @@
                 </tr>
                 <tr>
                     <td class="redText">الحي</td>
-                    <td colspan="2" id="selectedAlhai"></td>
+                    <td id="selectedAlhai"></td>
                     <td class="redText">رقم المخطط</td>
-                    <td colspan="2" id="selectedAlmo5atat"></td>
+                    <td id="selectedAlmo5atat"></td>
                     <td class="redText">رقم القطعة</td>
-                    <td colspan="2" id="selectedRaqamAlqit3a"></td>
+                    <td id="selectedRaqamAlqit3a"></td>
+                    <td class="redText">الصك</td>
+                    <td id="selectedAlsak"></td>
+                    <td id="selectedTari5Alsak"></td>
                 </tr>
                 <tr>
                     <td class="redText">نوع التقرير</td>
@@ -736,11 +819,20 @@
 
             <table>
                 <tr>
-                    <td class="redText" colspan="5">حسب الرخصة</td>
-                    <td class="redText" colspan="6">حسب الطبيعة</td>
+                    <!-- <td class="redText" colspan="5">حسب الرخصة</td>
+                    <td class="redText" colspan="6">حسب الطبيعة</td> -->
+                    <td colspan="2">اسم الشارع</td>
+                    <td colspan="3" id="selectedIsmAlshar3"></td>
+                    <td>الاتجاهات</td>
+                    <td class="redText">شمال</td>
+                    <td class="redText">شرق</td>
+                    <td class="redText">جنوب</td>
+                    <td class="redText">غرب</td>
+                    <td></td>
+
                 </tr>
                 <tr>
-                    <td></td>
+                    <!-- <td></td>
                     <td class="redText">شمال</td>
                     <td class="redText">شرق</td>
                     <td class="redText">جنوب</td>
@@ -750,10 +842,20 @@
                     <td class="redText">شرق</td>
                     <td class="redText">جنوب</td>
                     <td class="redText">غرب</td>
-                    <td class="redText">مقدار الاختلاف</td>
+                    <td class="redText">مقدار الاختلاف</td> -->
+                    <td>المساحة</td>
+                    <td colspan="2" id="selectedAlmisaha"></td>
+                    <td>طول الواجهة</td>
+                    <td id="selectedTolAlwagha"></td>
+                    <td>الحدود</td>
+                    <td id="selectedRo5saHododNorth"></td>
+                    <td id="selectedRo5saHododEast"></td>
+                    <td id="selectedRo5saHododSouth"></td>
+                    <td id="selectedRo5saHododWest"></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td class="redText">الحدود</td>
+                    <!-- <td class="redText">الحدود</td>
                     <td id="selectedRo5saHododNorth"></td>
                     <td id="selectedRo5saHododEast"></td>
                     <td id="selectedRo5saHododSouth"></td>
@@ -763,10 +865,18 @@
                     <td id="selectedTabi3aHododEast"></td>
                     <td id="selectedTabi3aHododSouth"></td>
                     <td id="selectedTabi3aHododWest"></td>
-                    <td></td>
+                    <td></td> -->
+                    <td colspan="2">نوع النشاط</td>
+                    <td colspan="3" id="selectedNo3Alnashat"></td>
+                    <td>الارتداد</td>
+                    <td id="selectedRo5saAb3adNorth"></td>
+                    <td id="selectedRo5saAb3adEast"></td>
+                    <td id="selectedRo5saAb3adSouth"></td>
+                    <td id="selectedRo5saAb3adWest"></td>
+                    <td>حسب الرخصة</td>
                 </tr>
                 <tr>
-                    <td class="redText">الارتداد</td>
+                    <!-- <td class="redText">الارتداد</td>
                     <td id="selectedRo5saAb3adNorth"></td>
                     <td id="selectedRo5saAb3adEast"></td>
                     <td id="selectedRo5saAb3adSouth"></td>
@@ -776,7 +886,15 @@
                     <td id="selectedTabi3aAb3adEast"></td>
                     <td id="selectedTabi3aAb3adSouth"></td>
                     <td id="selectedTabi3aAb3adWest"></td>
-                    <td></td>
+                    <td></td> -->
+                    <td colspan="2">رقم العداد</td>
+                    <td colspan="3" id="selectedRaqamAl3adad"></td>
+                    <td>الارتداد</td>
+                    <td id="selectedTabi3aAb3adNorth"></td>
+                    <td id="selectedTabi3aAb3adEast"></td>
+                    <td id="selectedTabi3aAb3adSouth"></td>
+                    <td id="selectedTabi3aAb3adWest"></td>
+                    <td colspan="2">حسب الطبيعة</td>
                 </tr>
             </table>
 

@@ -18,7 +18,6 @@ hr {
 
 .redText {
     color: black;
-    font-weight: 700;
 }
 
 @media print {
