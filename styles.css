@@ -4,10 +4,10 @@ body{
 }
 
 hr {
-    color: grey;
+    color: white;
     height:2px;
     border-width:0;
-    background-color:gray
+    background-color:white
 }
 
 .jumbotron {
@@ -48,6 +48,16 @@ hr {
 .imagesInSecondHeader {
     width: 100px;
     height: 100px;
+}
+
+.centeredText {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.blockParagraph {
+    font-size: 11px;
+    text-align: center;
 }
 
 /* ******************************************************************************* */
